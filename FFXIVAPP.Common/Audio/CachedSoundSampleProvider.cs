@@ -11,6 +11,7 @@
 namespace FFXIVAPP.Common.Audio {
     using System;
 
+    /* TODO: Implement this
     using NAudio.Wave;
 
     public class CachedSoundSampleProvider : ISampleProvider {
@@ -55,4 +56,5 @@ namespace FFXIVAPP.Common.Audio {
             return (int) samplesToCopy;
         }
     }
+    */
 }

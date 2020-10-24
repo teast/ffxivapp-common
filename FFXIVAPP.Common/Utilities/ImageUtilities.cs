@@ -9,21 +9,13 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 namespace FFXIVAPP.Common.Utilities {
-    using System.IO;
-    using System.Windows.Media.Imaging;
+    using Avalonia.Media.Imaging;
 
     public static class ImageUtilities {
-        public static BitmapImage LoadImageFromStream(string location) {
-            BitmapImage result = null;
+        public static Bitmap LoadImageFromStream(string location) {
+            Bitmap result = null;
             if (location != null) {
-                var bitmapImage = new BitmapImage();
-                using (FileStream stream = File.OpenRead(location)) {
-                    bitmapImage.BeginInit();
-                    bitmapImage.CacheOption = BitmapCacheOption.OnLoad;
-                    bitmapImage.StreamSource = stream;
-                    bitmapImage.EndInit();
-                }
-
+                var bitmapImage = new Bitmap(location);
                 result = bitmapImage;
             }
 

@@ -15,7 +15,8 @@ namespace FFXIVAPP.Common {
     using FFXIVAPP.Common.Helpers;
 
     public static class Constants {
-        public static readonly FlowDocHelper FD = new FlowDocHelper();
+        // TODO: Implement this:
+        // public static readonly FlowDocHelper FD = new FlowDocHelper();
 
         public static string CachePath {
             get {

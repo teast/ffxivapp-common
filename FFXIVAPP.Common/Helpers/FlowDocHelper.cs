@@ -10,13 +10,10 @@
 
 namespace FFXIVAPP.Common.Helpers {
     using System;
-    using System.Windows;
-    using System.Windows.Controls;
-    using System.Windows.Documents;
-    using System.Windows.Media;
 
     using FFXIVAPP.Common.Converters;
 
+    /* TODO: Implement this
     public class FlowDocHelper {
         private readonly StringToBrushConverter _stb = new StringToBrushConverter();
 
@@ -80,4 +77,5 @@ namespace FFXIVAPP.Common.Helpers {
             block.Loaded -= BlockLoaded;
         }
     }
+    */
 }

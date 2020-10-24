@@ -9,11 +9,10 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 namespace FFXIVAPP.Common.Helpers {
-    using System.Windows;
-    using System.Windows.Data;
 
     using FFXIVAPP.Common.Converters;
 
+    /* TODO: Implement this
     public static class BindingHelper {
         /// <summary>
         /// </summary>
@@ -40,4 +39,5 @@ namespace FFXIVAPP.Common.Helpers {
             return binding;
         }
     }
+    */
 }

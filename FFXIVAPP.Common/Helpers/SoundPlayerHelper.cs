@@ -14,7 +14,7 @@ namespace FFXIVAPP.Common.Helpers {
     using System.IO;
     using System.Linq;
     using System.Text.RegularExpressions;
-
+    using System.Threading.Tasks;
     using FFXIVAPP.Common.Audio;
     using FFXIVAPP.Common.Models;
     using FFXIVAPP.Common.RegularExpressions;
@@ -25,7 +25,8 @@ namespace FFXIVAPP.Common.Helpers {
     public static class SoundPlayerHelper {
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
 
-        private static readonly Dictionary<string, CachedSound> SoundFiles = new Dictionary<string, CachedSound>();
+        // TODO: Implement this
+        //private static readonly Dictionary<string, CachedSound> SoundFiles = new Dictionary<string, CachedSound>();
 
         /// <summary>
         /// </summary>
@@ -45,7 +46,7 @@ namespace FFXIVAPP.Common.Helpers {
                     soundFiles.AddRange(files);
                 }
 
-                Func<bool> cacheSounds = delegate {
+                Task.Run(delegate {
                     foreach (FileInfo soundFile in soundFiles) {
                         if (soundFile.DirectoryName == null) {
                             continue;
@@ -63,8 +64,7 @@ namespace FFXIVAPP.Common.Helpers {
                     }
 
                     return true;
-                };
-                cacheSounds.BeginInvoke(delegate { }, cacheSounds);
+                });
             }
             catch (Exception ex) {
                 Logging.Log(Logger, new LogItem(ex, true));
@@ -72,6 +72,7 @@ namespace FFXIVAPP.Common.Helpers {
         }
 
         public static bool PlayCached(string soundFile, int volume = 100) {
+            /* TODO: Implement this
             var success = true;
             var fileName = Regex.Replace(soundFile, @"[\\/]+", "\\", SharedRegEx.DefaultOptions);
             try {
@@ -88,6 +89,8 @@ namespace FFXIVAPP.Common.Helpers {
             }
 
             return success;
+            */
+            return false;
         }
 
         /// <summary>
@@ -99,6 +102,7 @@ namespace FFXIVAPP.Common.Helpers {
                 CacheSoundFiles();
             }
 
+            /* TODO: Implement this
             lock (SoundFiles) {
                 if (SoundFiles.Any()) {
                     return SoundFiles.Select(soundFile => soundFile.Key).OrderBy(key => key).ToList();
@@ -106,9 +110,15 @@ namespace FFXIVAPP.Common.Helpers {
 
                 return new List<string>();
             }
+            */
+            return new List<string>();
         }
 
-        public static CachedSound TryGetSetSoundFile(string soundFile, int volume = 100) {
+       public static object TryGetSetSoundFile(string soundFile, int volume = 100) {
+           return null;
+       }
+        /* TODO: Implement this
+       public static CachedSound TryGetSetSoundFile(string soundFile, int volume = 100) {
             var fileName = Regex.Replace(soundFile, @"[\\/]+", "\\", SharedRegEx.DefaultOptions);
             lock (SoundFiles) {
                 try {
@@ -126,5 +136,6 @@ namespace FFXIVAPP.Common.Helpers {
                 }
             }
         }
+        */
     }
 }

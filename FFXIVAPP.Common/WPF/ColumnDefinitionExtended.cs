@@ -10,8 +10,8 @@
 
 namespace FFXIVAPP.Common.WPF {
     using System.Windows;
-    using System.Windows.Controls;
 
+    /* TODO: Implement this
     public class ColumnDefinitionExtended : ColumnDefinition {
         // Variables
         public static DependencyProperty VisibleProperty;
@@ -63,4 +63,5 @@ namespace FFXIVAPP.Common.WPF {
             obj.CoerceValue(MinWidthProperty);
         }
     }
+    */
 }

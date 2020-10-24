@@ -11,8 +11,8 @@
 namespace FFXIVAPP.Common.Behaviors {
     using System.Windows;
     using System.Windows.Input;
-    using System.Windows.Interactivity;
 
+    /* TODO: Implement this
     public class IgnoreMouseWheelBehavior : Behavior<UIElement> {
         protected override void OnAttached() {
             base.OnAttached();
@@ -33,4 +33,5 @@ namespace FFXIVAPP.Common.Behaviors {
             this.AssociatedObject.RaiseEvent(e2);
         }
     }
+    */
 }

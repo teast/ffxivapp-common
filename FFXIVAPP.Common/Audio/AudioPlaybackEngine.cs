@@ -11,6 +11,8 @@
 namespace FFXIVAPP.Common.Audio {
     using System;
 
+    /* TODO: Implement this
+
     using NAudio.Wave;
     using NAudio.Wave.SampleProviders;
 
@@ -71,4 +73,5 @@ namespace FFXIVAPP.Common.Audio {
             this.OutputDevice.Play();
         }
     }
+    */
 }

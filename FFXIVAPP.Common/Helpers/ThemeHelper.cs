@@ -12,16 +12,13 @@ namespace FFXIVAPP.Common.Helpers {
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Windows;
 
     using FFXIVAPP.Common.Models;
     using FFXIVAPP.Common.Utilities;
 
-    using MahApps.Metro;
-    using MahApps.Metro.Controls;
-
     using NLog;
 
+    /* TODO: Implement this
     public static class ThemeHelper {
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
 
@@ -56,4 +53,5 @@ namespace FFXIVAPP.Common.Helpers {
             ThemeManager.ChangeAppStyle(window, ThemeManager.Accents.First(a => a.Name == accent), ThemeManager.AppThemes.First(t => t.Name == "Base" + shade));
         }
     }
+    */
 }

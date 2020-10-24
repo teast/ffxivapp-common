@@ -8,13 +8,13 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace FFXIVAPP.Common.Utilities {
+namespace FFXIVAPP.Common.Utilities
+{
     using System.IO;
-    using System.Windows;
-    using System.Windows.Media;
-    using System.Windows.Media.Imaging;
 
     public static class ScreenCapture {
+        /*
+        TODO: Implement this
         /// <summary>
         /// </summary>
         /// <param name="source"> </param>
@@ -48,5 +48,6 @@ namespace FFXIVAPP.Common.Utilities {
 
             return imageArray;
         }
+        */
     }
 }

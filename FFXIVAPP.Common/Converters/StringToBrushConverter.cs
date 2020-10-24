@@ -11,14 +11,13 @@
 namespace FFXIVAPP.Common.Converters {
     using System;
     using System.Globalization;
-    using System.Windows.Data;
-    using System.Windows.Media;
 
     using FFXIVAPP.Common.Models;
     using FFXIVAPP.Common.Utilities;
 
     using NLog;
 
+    /* TODO: Implement this
     public class StringToBrushConverter : IValueConverter {
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
 
@@ -76,4 +75,5 @@ namespace FFXIVAPP.Common.Converters {
             return new BrushConverter().ConvertFrom("#FFFFFFFF");
         }
     }
+    */
 }

@@ -8,14 +8,13 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace FFXIVAPP.Common.Utilities {
+namespace FFXIVAPP.Common.Utilities
+{
     using System;
-    using System.Windows;
-    using System.Windows.Controls;
-    using System.Windows.Controls.Primitives;
     using System.Windows.Input;
 
     public class SelectionBehavior {
+        /* TODO: Implement this
         public static readonly DependencyProperty SelectionChangedProperty = DependencyProperty.RegisterAttached("SelectionChanged", typeof(ICommand), typeof(SelectionBehavior), new UIPropertyMetadata(SelectedItemChanged));
 
         /// <summary>
@@ -53,5 +52,6 @@ namespace FFXIVAPP.Common.Utilities {
             var command = (ICommand) element.GetValue(SelectionChangedProperty);
             command.Execute(((Selector) sender).SelectedValue);
         }
+        */
     }
 }

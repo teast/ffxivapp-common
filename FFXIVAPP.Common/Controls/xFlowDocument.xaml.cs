@@ -11,6 +11,14 @@
 namespace FFXIVAPP.Common.Controls {
     using System.ComponentModel;
     using System.Runtime.CompilerServices;
+    using Avalonia.Controls;
+
+    public class xFlowDocument: Window
+    {
+
+    }
+    
+    /* TODO: Implement this
 
     /// <summary>
     ///     Interaction logic for xFlowDocument.xaml
@@ -40,4 +48,5 @@ namespace FFXIVAPP.Common.Controls {
             this.PropertyChanged(this, new PropertyChangedEventArgs(caller));
         }
     }
+    */
 }

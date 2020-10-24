@@ -12,11 +12,11 @@ namespace FFXIVAPP.Common.Converters {
     using System;
     using System.Globalization;
     using System.IO;
-    using System.Windows.Data;
 
     using FFXIVAPP.Common.Utilities;
     using FFXIVAPP.ResourceFiles;
 
+    /* TODO: Implement this
     public class IconConverterFromModel : IMultiValueConverter {
         private const string IconPath = "/Plugins/{0}/{1}";
 
@@ -47,4 +47,5 @@ namespace FFXIVAPP.Common.Converters {
             throw new NotImplementedException();
         }
     }
+    */
 }

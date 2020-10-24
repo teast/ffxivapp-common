@@ -11,9 +11,8 @@
 namespace FFXIVAPP.Common.Converters {
     using System;
     using System.Globalization;
-    using System.Windows;
-    using System.Windows.Data;
 
+    /* TODO: Implement this
     public class TabStripBorderConverter : IValueConverter {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture) {
             var thickness = new Thickness();
@@ -39,4 +38,5 @@ namespace FFXIVAPP.Common.Converters {
             throw new NotImplementedException();
         }
     }
+    */
 }

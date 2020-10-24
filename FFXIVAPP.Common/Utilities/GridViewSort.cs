@@ -8,17 +8,14 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace FFXIVAPP.Common.Utilities {
+namespace FFXIVAPP.Common.Utilities
+{
     using System.ComponentModel;
     using System.Linq;
-    using System.Windows;
-    using System.Windows.Controls;
-    using System.Windows.Controls.Primitives;
-    using System.Windows.Documents;
     using System.Windows.Input;
-    using System.Windows.Media;
 
     public class GridViewSort {
+        /* TODO: Implement this
         public static readonly DependencyProperty CommandProperty = DependencyProperty.RegisterAttached(
             "Command",
             typeof(ICommand),
@@ -317,5 +314,6 @@ namespace FFXIVAPP.Common.Utilities {
         // Using a DependencyProperty as the backing store for SortGlyphDescending.  This enables animation, styling, binding, etc...
 
         // Using a DependencyProperty as the backing store for SortedColumn.  This enables animation, styling, binding, etc...
+        */
     }
 }

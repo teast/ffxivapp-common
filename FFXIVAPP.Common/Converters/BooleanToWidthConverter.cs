@@ -12,8 +12,8 @@ namespace FFXIVAPP.Common.Converters {
     using System;
     using System.Globalization;
     using System.Text.RegularExpressions;
-    using System.Windows.Data;
 
+    /* TODO: Implement this
     public class BooleanToWidthConverter : IValueConverter {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture) {
             try {
@@ -32,4 +32,5 @@ namespace FFXIVAPP.Common.Converters {
             return value;
         }
     }
+    */
 }

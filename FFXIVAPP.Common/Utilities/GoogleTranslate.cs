@@ -9,21 +9,16 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 using System.Collections.Generic;
-using System.Windows.Documents;
 using Newtonsoft.Json;
 
-namespace FFXIVAPP.Common.Utilities {
+namespace FFXIVAPP.Common.Utilities
+{
     using System;
     using System.Collections;
-    using System.IO;
     using System.Net.Http;
-    using System.Text;
     using System.Threading.Tasks;
-    using System.Web;
 
     using FFXIVAPP.Common.Models;
-
-    using HtmlAgilityPack;
 
     using NLog;
 
@@ -51,7 +46,6 @@ namespace FFXIVAPP.Common.Utilities {
         /// <returns> </returns>
         public static GoogleTranslateResult Translate(string textToTranslate, string inLang, string outLang, bool jpOnly) {
             Logging.Log(Logger, "Calling Google");
-
             var result = new GoogleTranslateResult {
                 Original = textToTranslate
             };
@@ -70,18 +64,25 @@ namespace FFXIVAPP.Common.Utilities {
 
                 using (Task<string> response = HTTPClient.GetStringAsync(new Uri(url))) {
                     string translateResult = response.Result;
+                    var json = JsonConvert.DeserializeObject<List<string>>(translateResult);
+                    json = JsonConvert.DeserializeObject<List<string>>(json?[0]);
+                    json = JsonConvert.DeserializeObject<List<string>>(json?[0]);
+                    result.Translated = json?[0];
+                    result.Romanization = json?[0];
 
-                    var json = JsonConvert.DeserializeObject<List<dynamic>>(translateResult);
+                    /* TODO: Implement this (cannot deserialize into List<dynamic>)
+                    var json = JsonConvert.DeserializeObject<List<object>>(translateResult);
                     var items = json?[0];
 
                     result.Translated = items?[0]?[0];
                     result.Romanization = items?[0]?[0];
+                    */
                 }
+
             }
             catch (Exception ex) {
                 Logging.Log(Logger, new LogItem(ex, true));
             }
-
             return result;
         }
 

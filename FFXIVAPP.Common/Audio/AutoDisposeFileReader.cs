@@ -9,6 +9,7 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 namespace FFXIVAPP.Common.Audio {
+    /* TODO: Implement this
     using NAudio.Wave;
 
     public class AutoDisposeFileReader : ISampleProvider {
@@ -37,4 +38,5 @@ namespace FFXIVAPP.Common.Audio {
             return read;
         }
     }
+    */
 }

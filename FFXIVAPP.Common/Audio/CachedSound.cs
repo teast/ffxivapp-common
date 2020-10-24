@@ -12,6 +12,7 @@ namespace FFXIVAPP.Common.Audio {
     using System.Collections.Generic;
     using System.Linq;
 
+    /* TODO: Implement this
     using NAudio.Wave;
 
     public class CachedSound {
@@ -49,4 +50,5 @@ namespace FFXIVAPP.Common.Audio {
 
         public WaveFormat WaveFormat { get; }
     }
+    */
 }

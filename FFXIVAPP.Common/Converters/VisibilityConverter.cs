@@ -12,9 +12,8 @@ namespace FFXIVAPP.Common.Converters {
     using System;
     using System.Globalization;
     using System.Text.RegularExpressions;
-    using System.Windows;
-    using System.Windows.Data;
 
+    /* TODO: Implement this
     public class VisibilityConverter : IValueConverter {
         /// <summary>
         /// </summary>
@@ -47,4 +46,5 @@ namespace FFXIVAPP.Common.Converters {
             return (Visibility) value == Visibility.Visible;
         }
     }
+    */
 }
