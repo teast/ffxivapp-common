@@ -14,7 +14,7 @@ namespace FFXIVAPP.Common.Helpers
     using Avalonia.Threading;
 
     public static class DispatcherHelper {
-        public static void Invoke(Action action, DispatcherPriority dispatcherPriority = DispatcherPriority.Background) {
+        public static void Invoke(Action action, DispatcherPriority dispatcherPriority = DispatcherPriority.Normal) {
             Avalonia.Threading.Dispatcher.UIThread.Post(() => { action(); }, dispatcherPriority);
         }
     }
